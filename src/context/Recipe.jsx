@@ -36,7 +36,7 @@ export const RecipeProvider = ({ children }) => {
     const idx = cpy.findIndex((item) => item.id === currItem.id);
 
     if (idx == -1) cpy.push(currItem);
-    else cpy.splice(idx);
+    else cpy.splice(idx, 1);
 
     setFavouriteList(cpy);
   };
